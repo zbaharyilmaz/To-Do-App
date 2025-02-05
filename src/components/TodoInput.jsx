@@ -30,13 +30,13 @@ const TodoInput = () => {
             },
             "& .MuiOutlinedInput-root": {
               "& fieldset": {
-                borderColor: "white",
+                borderColor: "",
               },
               "&:hover fieldset": {
                 borderColor: "#79db16",
               },
               "&.Mui-focused fieldset": {
-                borderColor: "magenta",
+                borderColor: "#79db16",
               },
             },
           }}
