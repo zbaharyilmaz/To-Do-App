@@ -13,7 +13,7 @@ const TodoItem = () => {
           <div>
             <span>
               <img
-                src={okLogo}
+                src=""
                 className="ok-logo"
                 alt="ok logo"
     
@@ -22,7 +22,7 @@ const TodoItem = () => {
             </span>
             <span>
               <img
-                src={deleteLogo}
+                src=""
                 className="delete-logo"
                 alt="delete logo"
                 
