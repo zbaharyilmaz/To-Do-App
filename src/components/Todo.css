@@ -7,23 +7,22 @@
 .todo-head{
     font-size: 4rem;
     font-weight: 600;
-    /* color: rgb(227, 68, 238);  */
-    /* color: rgb(56, 157, 234); */
     color: rgb(27, 202, 27);
     margin-top: 2rem;
 }
-/* .todo-icon{
-    width: 50px;
-} */
 
 .todo-input {
    width: 70% !important;
   }
-  
+  form{
+    margin:2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .add-button {
     margin: .7rem !important;
     font-size: 1.1rem !important;
-    /* background-color: rgb(227, 68, 238) !important; */
     background-color: rgb(27, 202, 27) !important;
     font-family: "Pixelify Sans", serif !important;
   }
@@ -50,7 +49,7 @@
 .todo-list {
     padding: 10px;
     margin: 10px;
-    background-color: rgba(240, 246, 239, 0.8);
+    background-color: #FEFEFE;
     display:flex;
     flex-direction: column;
     justify-content: center;

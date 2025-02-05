@@ -25,19 +25,8 @@ const TodoInput = () => {
           onChange={(e) => setInput(e.target.value)}
           sx={{
             "&:hover": {
-              borderColor: "#79db16",
-              backgroundColor: "white",
-            },
-            "& .MuiOutlinedInput-root": {
-              "& fieldset": {
-                borderColor: "",
-              },
-              "&:hover fieldset": {
-                borderColor: "#79db16",
-              },
-              "&.Mui-focused fieldset": {
-                borderColor: "#79db16",
-              },
+              borderColor: "#f6b676",
+              backgroundColor: "#FEFEFE",
             },
           }}
         />
