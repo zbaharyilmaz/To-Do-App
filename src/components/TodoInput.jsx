@@ -17,7 +17,7 @@ const TodoInput = () => {
         <TextField
           className="todo-input"
           id="outlined-basic"
-          label="Add Your New Task"
+          placeholder="Add Your New Task"
           variant="outlined"
 
         />

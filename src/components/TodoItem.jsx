@@ -22,7 +22,7 @@ const TodoItem = ({todo}) => {
                 src={done}
                 className="ok-logo"
                 alt="ok logo"
-                style={{filter: "sepia(50%)"}}
+                style={{filter: "sepia(90%)"}}
     
               
               />
@@ -32,7 +32,7 @@ const TodoItem = ({todo}) => {
                 src={cross}
                 className="delete-logo"
                 alt="delete logo"
-                style={{filter: "sepia(10%)"}}
+                style={{filter: "sepia(50%)"}}
                 
               />
             </span>
