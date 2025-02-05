@@ -1,19 +1,20 @@
+import cancel from "../assets/cancel.png";
+import done from "../assets/done.png";
+
 
 const TodoItem = () => {
     return (
         <div
-        //   style={{
-        //     background: ,
-        //     textDecoration: ,
-        //     borderRadius: "5px",
-        //   }}
+         style={{
+           borderRadius: "5px",
+         }}
           className="todo-list"
         >
-          <h2 className="todoText">TO DO APP</h2>
+          <h2 className="todoText"></h2>
           <div>
             <span>
               <img
-                src=""
+                src={done}
                 className="ok-logo"
                 alt="ok logo"
     
@@ -22,7 +23,7 @@ const TodoItem = () => {
             </span>
             <span>
               <img
-                src=""
+                src={cancel}
                 className="delete-logo"
                 alt="delete logo"
                 
