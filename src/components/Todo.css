@@ -1,36 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 
+*{
+  font-family: "Pixelify Sans", serif;
+}
 
 .todo-head{
-    font-family: "Pixelify Sans", serif;
-    font-size: 3rem;
-    color: rgb(245, 74, 245);
-    margin-top: 5rem;
+    font-size: 4rem;
+    color: rgb(227, 68, 238);
+    margin-top: 2rem;
 }
-.todo-icon{
+/* .todo-icon{
     width: 50px;
-}
+} */
 
-/* .todo-input {
-    padding: 10px;
-    font-size: 1rem;
+.todo-input {
+   /* //! ÇALIŞMADI. AYRICA İMPORTANT MI YAPMAK LAZIM. font-family: "Pixelify Sans", serif !important;  */
+   font-family: "Pixelify Sans", serif !important;
+   width: 70% !important;
   }
   
   .add-button {
-    padding: 10px;
-    font-size: 1rem;
-    background-color: green;
-    color: white;
-  } */
+    margin: .7rem !important;
+    font-size: 1.1rem !important;
+    background-color: rgb(227, 68, 238) !important;
+    font-family: "Pixelify Sans", serif !important;
+  }
   
   .ok-logo {
-    width: 100px;
+    width: 60px;
     margin: 10px;
     cursor: pointer;
   }
   
 .delete-logo {
-  width: 30px;
+  width: 60px;
   margin: 10px;
   cursor: pointer;
 }

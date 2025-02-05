@@ -1,4 +1,4 @@
-import cancel from "../assets/cancel.png";
+import cross from "../assets/cross.png";
 import done from "../assets/done.png";
 
 
@@ -23,7 +23,7 @@ const TodoItem = () => {
             </span>
             <span>
               <img
-                src={cancel}
+                src={cross}
                 className="delete-logo"
                 alt="delete logo"
                 
