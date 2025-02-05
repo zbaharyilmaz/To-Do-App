@@ -1,25 +1,45 @@
-import { TextField, Button} from "@mui/material";
+import React from "react";
+import { TextField, Button } from "@mui/material";
+import { useState } from "react";
+import { useDispatch } from "react-redux";
 
 const TodoInput = () => {
+  const [input, setInput] = useState("");
+  const dispatch = useDispatch();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(input);
+    dispatch(add(input));
+  };
+
   return (
     <div>
-      {/* <form>
-      <input
-        className="todo-input"
-        type="text"
-        placeholder="Add New Task"
-      />
-      <button type="submit" className="add-button">
-        Add
-      </button>
-    </form> */}
-      <form className="todo-form">
+      <form onSubmit={handleSubmit} className="todo-form">
         <TextField
           className="todo-input"
           id="outlined-basic"
-          placeholder="Add Your New Task"
+          label="Task"
+          placeholder="Enter your task..."
           variant="outlined"
-
+          onChange={(e) => setInput(e.target.value)}
+          sx={{
+            "&:hover": {
+              borderColor: "#79db16",
+              backgroundColor: "white",
+            },
+            "& .MuiOutlinedInput-root": {
+              "& fieldset": {
+                borderColor: "white",
+              },
+              "&:hover fieldset": {
+                borderColor: "#79db16",
+              },
+              "&.Mui-focused fieldset": {
+                borderColor: "magenta",
+              },
+            },
+          }}
         />
         <Button className="add-button" variant="contained" type="submit">
           ADD

@@ -2,16 +2,28 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  text-align: center !important;
+  text-align: center;
 }
 
 .todo {
-  background-color: #FBAB7E;
-  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
-  ;
+  background-image: url("./assets/bg.png");
+
+  background-position: center;
+  background-repeat:repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 90%;
- }
+  height: 100%; }
+
+
+
+  Color Theme Swatches in Hex
+.mario-wall-paper-1-hex { color: #57B7F2; }
+.mario-wall-paper-2-hex { color: #88DFF2; }
+.mario-wall-paper-3-hex { color: #6FA638; }
+.mario-wall-paper-4-hex { color: #D9923B; }
+.mario-wall-paper-5-hex { color: #A65C1C; }
+
+
