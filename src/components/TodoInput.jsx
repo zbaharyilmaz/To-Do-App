@@ -13,12 +13,13 @@ const TodoInput = () => {
         Add
       </button>
     </form> */}
-      <form action="">
+      <form className="todo-form">
         <TextField
           className="todo-input"
           id="outlined-basic"
           label="Add Your New Task"
           variant="outlined"
+
         />
         <Button className="add-button" variant="contained" type="submit">
           ADD
