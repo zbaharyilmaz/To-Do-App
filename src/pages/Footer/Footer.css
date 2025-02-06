@@ -1,0 +1,33 @@
+ .footer{
+  background-color: rgba(150, 179, 218, 0.363);
+  color: rgb(35, 32, 32);
+  padding: .5rem;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  bottom: 0; 
+  font-size: 0.7rem;
+  font-weight: 600;
+ }
+ @media only screen and (min-width: 1200px) {
+  .footer{
+    font-size:0.8rem;
+  }
+  
+ }
+ @media screen and (min-width: 769px) and (max-width: 1199px) {
+  .footer{
+    font-size:0.7rem;
+  }
+  }
+  @media screen and (min-width: 601px) and (max-width: 768px) {
+    .footer{
+      font-size:0.6rem;
+    }
+    }
+    @media only screen and (max-width: 600px) {
+      .footer{
+        font-size:0.5rem;
+      }
+    
+  }

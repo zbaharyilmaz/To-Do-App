@@ -1,0 +1,41 @@
+.todo-item {
+    padding: 1rem;
+    border-radius: 30px !important;
+  } 
+.todo-text {
+    padding-left: 1rem;
+    text-align: start;
+    text-align: center;
+    font-size: 2rem;
+  } 
+.todo-actions{
+  display: flex;
+  justify-content: center
+}
+.ok-logo {
+    width: 60px;
+    margin: 10px;
+    cursor: pointer;
+  }
+.delete-logo {
+  width: 60px;
+  margin: 10px;
+  cursor: pointer;
+  filter: grayscale(60%)
+}
+
+@media (max-width: 768px) {
+  .todo-item {
+    padding: 0.5rem;
+  }
+
+  .todo-text {
+    font-size: 1.2rem;
+  }
+
+  .ok-logo,
+  .delete-logo {
+    width: 40px;
+    margin: 5px;
+  }
+}

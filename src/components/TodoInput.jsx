@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { TextField, Button } from "@mui/material";
-import { useState } from "react";
 import { useDispatch } from "react-redux";
+import { add } from "../redux/actions/todoActions";
+import "./TodoInput.css";
 
 const TodoInput = () => {
   const [input, setInput] = useState("");
@@ -9,28 +10,68 @@ const TodoInput = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(input);
-    dispatch(add(input));
+    if (input.trim()) {
+      dispatch(add(input));
+      setInput("");
+    }
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit} className="todo-form">
+    <div className="todo-input">
+      <form onSubmit={handleSubmit}>
         <TextField
-          className="todo-input"
           id="outlined-basic"
-          label="Task"
-          placeholder="Enter your task..."
+          label="Star Task"
+          placeholder="Enter Your Task..."
           variant="outlined"
-          onChange={(e) => setInput(e.target.value)}
           sx={{
-            "&:hover": {
-              borderColor: "#f6b676",
-              backgroundColor: "#FEFEFE",
+            margin: 2,
+            '& .MuiInputLabel-root': {
+              fontFamily: "Pixelify Sans",
+                fontSize: '1rem', 
+                fontWeight: 'bold',
+                color: '#7e3511', 
             },
           }}
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+     
         />
-        <Button className="add-button" variant="contained" type="submit">
+        <Button 
+        variant="contained" type="submit"
+        sx={{
+          margin: 2,
+          backgroundColor: '#7e3511',
+          color: '#f5f5f5',
+          fontFamily: "Pixelify Sans",
+          fontSize: '1.5rem', 
+          fontWeight: 'bold',
+          textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+          boxShadow: "2px 2px 5px rgba(0, 0, 0, 1)",
+          marginTop: '20px',
+          '&:hover': {
+                    backgroundColor: '#303f9f', 
+                },
+           '&:active': {
+                    backgroundColor: '#303f9f'},
+                '@media (min-width: 1200px)': {
+                      fontSize: '2rem', 
+                      padding: '8px 9px', 
+                  },
+                  "@media(max-width: 992px)": {
+                      fontSize: '1.75rem', 
+                      padding: '8px 15px', 
+                  },
+                  '@media (max-width: 768px)': {
+                      fontSize: '1.25rem', 
+                      padding: '8px 16px', 
+                  },
+                  '@media (max-width: 600px)': {
+                      fontSize: '1rem',
+                      padding: '4px', 
+                      marginTop: '20px',
+                  },
+        }}>
           ADD
         </Button>
       </form>

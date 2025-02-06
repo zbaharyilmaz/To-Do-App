@@ -1,0 +1,66 @@
+ .todo-head {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: rgb(61, 242, 61);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 50px;
+    margin: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+.todo-icon{
+    width: 70px;
+    margin: 1rem;
+} 
+@media only screen and (min-width: 1200px) {
+    .todo-head {
+        font-size: 4rem; 
+        top: 40px;
+        margin: 1.5rem; 
+        max-width: 80%; 
+    }
+
+    .todo-icon {
+        width: 70px; 
+        margin: 1.5rem; 
+    }
+}
+@media only screen and (max-width: 992px) {
+    .todo-head {
+        font-size: 3rem; 
+        top: 30px;
+        margin: 0.75rem; 
+    }
+    .todo-icon {
+        width: 50px;
+        margin: 0.75rem; 
+    }
+}
+@media only screen and (max-width: 768px) {
+    .todo-head {
+        font-size: 2.7rem; 
+        top: 18px;
+        margin: 0.5rem; 
+    }
+
+    .todo-icon {
+        width: 40px;
+        margin: 0.5rem; 
+    }
+}
+@media only screen and (max-width: 480px) {
+    .todo-head {
+        font-size: 2rem; 
+        top: 20px;
+        margin: 0.25rem;
+    }
+
+    .todo-icon {
+        width: 30px;
+        margin: 0.25rem;
+    }
+}
