@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   text-align: center;
-}
+  font-family: 'Pixelify Sans', sans-serif}
 
 .todo {
   background-image: url("./assets/bg.png");

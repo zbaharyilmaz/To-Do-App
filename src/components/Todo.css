@@ -1,18 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
-
-*{
-  font-family: "Pixelify Sans", serif;
-}
-
 .todo-head{
     font-size: 4rem;
     font-weight: 600;
     color: rgb(27, 202, 27);
     margin-top: 2rem;
 }
-
 .todo-input {
-   width: 70% !important;
+   width: 65%;
   }
   form{
     margin:2rem;
@@ -24,7 +17,7 @@
     margin: .7rem !important;
     font-size: 1.1rem !important;
     background-color: rgb(27, 202, 27) !important;
-    font-family: "Pixelify Sans", serif !important;
+    font-family: 'Pixelify Sans', sans-serif !important;
   }
   
   .ok-logo {
@@ -38,7 +31,9 @@
   margin: 10px;
   cursor: pointer;
 }
-  
+  .todo-icon{
+    width: 20px;
+  }
   /* .todoText {
     /* width: 75%; */
     /* display: flex;
